@@ -1,10 +1,6 @@
 from flask import Flask, request, jsonify
 import httpx
-from dotenv import load_dotenv
 from flask_cors import CORS
-
-# Load .env file for local testing
-load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -63,5 +59,4 @@ Startup Idea: {idea}
         # print(f"Error: {e}")
         return jsonify({"error": str(e)}), 500
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
