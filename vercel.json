@@ -9,8 +9,9 @@
     ],
     "routes" : [
         {
-            "src" : "/(.*)",
-            "dest" : "/"
+            "src" : "/analyze_idea",
+            "methods" : ["POST"],
+            "dest" : "./index.py"
         }
     ]
 }
