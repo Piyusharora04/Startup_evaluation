@@ -1,17 +1,17 @@
 {
-    "version" : 2,
-    "builds" : [
-        {
-            "src" : "./index.py",
-            "use" : "@vercel/python",
-            "config" : {"runtime" : "python3.13.3"}
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/analyze_idea.py",
+        "use": "@vercel/python"
+      }
     ],
-    "routes" : [
-        {
-            "src" : "/app",
-            "methods" : ["POST"],
-            "dest" : "./index.py"
-        }
+    "routes": [
+      {
+        "src": "/analyze_idea",
+        "methods": ["POST"],
+        "dest": "api/analyze_idea.py"
+      }
     ]
-}
+  }
+  
