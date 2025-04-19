@@ -88,7 +88,7 @@ def analyze_idea():
     prompt = f"""
 You are the best startup consultant in the world. You have a lot of experience in analyzing startup ideas and providing actionable insights.
 You are given a startup idea and you need to analyze it and provide the following:
-1. Estimated budget (in INR or USD).
+1. Estimated budget (in INR and USD).
 2. Steps to build and launch the startup.
 3. A realistic timeline in months.
 
