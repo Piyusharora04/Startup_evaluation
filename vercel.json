@@ -1,17 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "api/analyze_idea.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/analyze_idea",
-        "methods": ["POST"],
-        "dest": "api/analyze_idea.py"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/analyze_idea.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/analyze_idea",
+      "dest": "api/analyze_idea.py"
+    }
+  ]
+}
