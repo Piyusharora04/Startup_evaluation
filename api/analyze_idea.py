@@ -77,7 +77,7 @@ CORS(app)  # This sets Access-Control-Allow-Origin: * for all routes
 GROQ_API_KEY = "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"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
-@app.route("/api/analyze_idea", methods=["POST"])
+@app.route("/analyze_idea", methods=["POST"])
 def analyze_idea():
     data = request.get_json()
     idea = data.get("idea")
@@ -122,5 +122,4 @@ Startup Idea: {idea}
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Required to expose 'app' for Vercel Python runtime
 app = app
